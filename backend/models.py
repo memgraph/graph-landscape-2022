@@ -8,11 +8,12 @@ class Technology(Node):
     name: str = Field(exists=True, unique=True, db=memgraph)
     description: str = Field()
     website: str = Field()
-    img_url: Optional[str] = Field()
+    logo_url: str = Field()
 
 
 class Organization(Node):
     name: str = Field(exists=True, unique=True, db=memgraph)
+    logo_url: str = Field()
 
 
 class Category(Node):

@@ -16,9 +16,11 @@ def load():
                     name=row[1],
                     description=row[3],
                     website=row[4],
-                    img_url="".join(row[1].split()).lower(),
+                    logo_url="".join(row[1].split()).lower(),
                 ).save(memgraph)
-                organization = models.Organization(name=row[0]).save(memgraph)
+                organization = models.Organization(
+                    name=row[0], logo_url="".join(row[1].split()).lower()
+                ).save(memgraph)
                 category = models.Category(name=row[2]).save(memgraph)
 
                 is_part_of = models.IsPartOf(
