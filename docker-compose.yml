@@ -1,0 +1,35 @@
+version: "3"
+networks:
+  app-tier:
+    driver: bridge
+services:
+ memgraph:
+    image: memgraph/memgraph:2.1.1
+    user: memgraph
+    entrypoint:
+      [
+        "/usr/lib/memgraph/memgraph",
+        "--telemetry-enabled=false"
+      ]
+    ports:
+      - "7687:7687"
+    networks:
+      - app-tier
+ core:
+    image: tianon/true
+    restart: "no"
+    depends_on:
+      - memgraph
+ graph-app:
+    build: ./backend
+    volumes:
+      - ./backend:/app
+    ports:
+      - "5000:5000"
+    environment:
+      MG_HOST: memgraph
+      MG_PORT: 7687
+    depends_on:
+      - memgraph
+    networks:
+      - app-tier
