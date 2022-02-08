@@ -1,22 +1,20 @@
 from enum import unique
+from genericpath import exists
 from typing import Optional
 from app import memgraph
 from gqlalchemy import Node, Field, Relationship
 
 
-class Technology(Node):
-    name: str = Field(exists=True, unique=True, db=memgraph)
-    description: str = Field()
+class Company(Node):
+    name: str = Field(exists=True, db=memgraph)
     website: str = Field()
-    logo_url: str = Field()
-
-
-class Organization(Node):
-    name: str = Field(exists=True, unique=True, db=memgraph)
-    logo_url: str = Field()
 
 
 class Category(Node):
+    name: str = Field(exists=True, unique=True, index=True, db=memgraph)
+
+
+class Subcategory(Node):
     name: str = Field(exists=True, unique=True, index=True, db=memgraph)
 
 

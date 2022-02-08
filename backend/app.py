@@ -69,6 +69,7 @@ def load_data():
         memgraph.drop_database()
         graph_data.load()
     except Exception as e:
+        log.info(e)
         log.info("Data loading error.")
 
 
