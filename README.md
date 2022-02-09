@@ -19,7 +19,7 @@ shadow-size: 6
 label: Format(":{}", Join(Labels(node), " :"))
 }
 
-@NodeStyle HasLabel?(node, "Technology") {
+@NodeStyle HasLabel?(node, "Company") {
 color: #dd2222
 color-hover: Darker(#dd2222)
 color-selected: #dd2222
@@ -31,7 +31,7 @@ color-hover: Darker(#ffd966)
 color-selected: #ffd966
 }
 
-@NodeStyle HasLabel?(node, "Organization") {
+@NodeStyle HasLabel?(node, "Subcategory") {
 color: #ff9100
 color-hover: Darker(#ff9100)
 color-selected: #ff9100
@@ -46,19 +46,12 @@ width: 3
 label: Type(edge)
 }
 
-@NodeStyle HasLabel?(node, "Technology") {
+@NodeStyle HasLabel?(node, "Company") {
 size: 20
 color: #FFC500
 color-hover: Darker(#FFC500)
 color-selected: #FFC500
-image-url: Format("https://raw.githubusercontent.com/memgraph/graph-landscape-2022/main/logo/technology/{}.svg", LowerCase(Property(node, "logo_url")))
+image-url: Format("https://raw.githubusercontent.com/memgraph/graph-landscape-2022/main/logo/{}.png", LowerCase(Property(node, "img")))
 }
 
-@NodeStyle HasLabel?(node, "Organization") {
-size: 20
-color: #FFC500
-color-hover: Darker(#FFC500)
-color-selected: #FFC500
-image-url: Format("https://raw.githubusercontent.com/memgraph/graph-landscape-2022/main/logo/organization/{}.svg", LowerCase(Property(node, "logo_url")))
-}
 ```
