@@ -6,7 +6,7 @@ from gqlalchemy import Node, Field, Relationship
 
 
 class Company(Node):
-    name: str = Field(exists=True, db=memgraph)
+    name: str = Field(exists=True, unique=True, db=memgraph)
     website: str = Field()
 
 
