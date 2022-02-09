@@ -5,7 +5,7 @@ from app import memgraph
 
 
 def load():
-    path = Path("import-data/graphlandscapenew1.csv")
+    path = Path("import-data/graphlandscapenew.csv")
 
     with open(path) as read_obj:
         csv_reader = reader(read_obj)
