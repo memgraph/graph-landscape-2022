@@ -8,6 +8,7 @@ from gqlalchemy import Node, Field, Relationship
 class Company(Node):
     name: str = Field(exists=True, unique=True, db=memgraph)
     website: str = Field()
+    img: str = Field()
 
 
 class Category(Node):

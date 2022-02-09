@@ -5,7 +5,7 @@ from app import memgraph
 
 
 def load():
-    path = Path("import-data/graphlandscapenew.csv")
+    path = Path("import-data/graphlandscapenew1.csv")
 
     with open(path) as read_obj:
         csv_reader = reader(read_obj)
@@ -16,7 +16,7 @@ def load():
             company = models.Company(
                 name=row[0],
                 website=row[3],
-                # logo_url="".join(row[1].split()).lower(),
+                img="".join(row[0].split()).lower(),
             ).save(memgraph)
             category = models.Category(name=row[1]).save(memgraph)
             subcategory = models.Subcategory(name=row[2]).save(memgraph)
