@@ -20,10 +20,10 @@ def load():
             ).save(memgraph)
             category = models.Category(name=row[1]).save(memgraph)
             subcategory = models.Subcategory(name=row[2]).save(memgraph)
-            is_part_of = models.IsPartOf(
+            models.IsPartOf(
                 _start_node_id=company._id, _end_node_id=subcategory._id
             ).save(memgraph)
 
-            belongs_to = models.BelongsTo(
+            models.BelongsTo(
                 _start_node_id=subcategory._id, _end_node_id=category._id
             ).save(memgraph)

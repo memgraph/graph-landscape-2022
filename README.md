@@ -1,10 +1,27 @@
 <h1 align="center">
- Graph Technology Landscape 2022
+ ⛰️ Graph Technology Landscape 2022 ⛰️
 </h1>
 
 This repository holds data about popular graph technologies in 2022. It imports them into Memgraph and creates cool visualization in Memgraph Lab.
 
-## Memgraph Lab Styling
+## 🏃‍♀️ Run the app
+
+To start the app run the following commands:
+
+```
+docker-compose build
+docker-compose up core
+docker-compose up graph-app
+```
+
+After that, in [Memgraph Lab](https://memgraph.com/download/#memgraph-lab), run the following query:
+
+```
+MATCH (n:Company)-[r:IS_PART_OF]->(s:Subcategory)-[b:BELONGS_TO]->(c:Category)
+RETURN n,r,s,b,c;
+```
+
+## 👞 Memgraph Lab Styling
 
 ```
 @NodeStyle {
