@@ -61,4 +61,8 @@ width: 1.5
 }
 ```
 
+In the [Memgraph Lab](https://memgraph.com/docs/memgraph-lab), you get the following visualization:
+
+![graph-landscape-2022-lab](https://raw.githubusercontent.com/memgraph/graph-landscape-2022/main/data/graph-landscape-2022-lab.png)
+
 If you want to change the style and you're not sure how, make sure to check our [Styling guide](https://memgraph.com/docs/memgraph/tutorials/style-your-graphs-in-memgraph-lab).
