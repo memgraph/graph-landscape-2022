@@ -26,21 +26,18 @@ To make this graph extra pretty, click on the gear icon (⚙️) to open the Sty
 
 ```
 @NodeStyle {
-size: 50
+size: 30
 border-width: 5
 border-color: #ffffff
 shadow-color: #bab8bb
 shadow-size: 6
 }
 
-@NodeStyle Greater?(Size(Labels(node)), 0) {
-label: Format(":{}", Join(Labels(node), " :"))
-}
-
 @NodeStyle HasLabel?(node, "Company") {
-color: #dd2222
-color-hover: Darker(#dd2222)
-color-selected: #dd2222
+color: #FFC500
+color-hover: Darker(#FFC500)
+color-selected: #FFC500
+image-url: Format("https://raw.githubusercontent.com/memgraph/graph-landscape-2022/main/logo/{}.png", LowerCase(Property(node, "img")))
 }
 
 @NodeStyle HasLabel?(node, "Category") {
@@ -60,18 +57,8 @@ label: AsText(Property(node, "name"))
 }
 
 @EdgeStyle {
-width: 3
-label: Type(edge)
+width: 1.5
 }
-
-@NodeStyle HasLabel?(node, "Company") {
-size: 20
-color: #FFC500
-color-hover: Darker(#FFC500)
-color-selected: #FFC500
-image-url: Format("https://raw.githubusercontent.com/memgraph/graph-landscape-2022/main/logo/{}.png", LowerCase(Property(node, "img")))
-}
-
 ```
 
 If you want to change the style and you're not sure how, make sure to check our [Styling guide](https://memgraph.com/docs/memgraph/tutorials/style-your-graphs-in-memgraph-lab).
