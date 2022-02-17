@@ -22,7 +22,7 @@ RETURN n,r,s,b,c;
 
 ## 🕴️ Memgraph Lab Styling
 
-To make this graph extra pretty, click on the gear icon (⚙️) to open the Style editor. Next, copy and paste the below style to the editor and click on Apply. If you wish so, you can also save this style for future use.
+To make this graph extra pretty in [Memgraph Lab](https://memgraph.com/docs/memgraph-lab), copy the below styling:
 
 ```
 @NodeStyle {
@@ -61,7 +61,11 @@ width: 1.5
 }
 ```
 
-In the [Memgraph Lab](https://memgraph.com/docs/memgraph-lab), you get the following visualization:
+Next, click on the gear icon (⚙️) to open the Style editor. Next, copy and paste the below style to the editor and click on Apply. If you wish so, you can also save this style for future use.
+
+![](https://raw.githubusercontent.com/memgraph/graph-landscape-2022/main/data/graph-landscape.gif)
+
+In the end, with the given styling, you get the following visualization:
 
 ![graph-landscape-2022-lab](https://raw.githubusercontent.com/memgraph/graph-landscape-2022/main/data/graph-landscape-2022-lab.png)
 
