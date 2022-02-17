@@ -10,8 +10,7 @@ To start the app run the following commands:
 
 ```
 docker-compose build
-docker-compose up core
-docker-compose up graph-app
+docker-compose up
 ```
 
 After that, in [Memgraph Lab](https://memgraph.com/download/#memgraph-lab), run the following query:
@@ -21,7 +20,9 @@ MATCH (n:Company)-[r:IS_PART_OF]->(s:Subcategory)-[b:BELONGS_TO]->(c:Category)
 RETURN n,r,s,b,c;
 ```
 
-## 👞 Memgraph Lab Styling
+## 🕴️ Memgraph Lab Styling
+
+To make this graph extra pretty, click on the gear icon (⚙️) to open the Style editor. Next, copy and paste the below style to the editor and click on Apply. If you wish so, you can also save this style for future use.
 
 ```
 @NodeStyle {
@@ -72,3 +73,5 @@ image-url: Format("https://raw.githubusercontent.com/memgraph/graph-landscape-20
 }
 
 ```
+
+If you want to change the style and you're not sure how, make sure to check our [Styling guide](https://memgraph.com/docs/memgraph/tutorials/style-your-graphs-in-memgraph-lab).
