@@ -1,3 +1,4 @@
+Company,Category,Subcategory,Website,
 7vortex,Applications,Visual analytics,https://www.7vortex.com,
 Accenture,Applications,CyberSecurity,https://www.accenture.com/us-en/service-idefense-security-intelligence,
 AllegroGraph,Applications,Knowledge Graph Solutions,https://franz.com/agraph/allegrograph/,
@@ -47,7 +48,7 @@ Creationline,Services,Consultancy / Professional Services,https://www.creationli
 cuGraph,Developer tools,Graph analytics libraries and toolkits,https://github.com/rapidsai/cugraph,
 CX-Ray,Applications,Human Resources,https://www.cx-ray.com,
 Cytoscape,Developer tools,Visualisation libraries and toolkits,https://cytoscape.org,
-D3.js,Developer tools,Visualisation libraries and toolkits,https://d3js.org,
+D3 js,Developer tools,Visualisation libraries and toolkits,https://d3js.org,
 Data To Value,Services,Consultancy / Professional Services,http://datatovalue.co.uk,
 Data Virtuality,Infrastructure,Integration,https://datavirtuality.com/connectors/,
 DataFactZ,Services,Consultancy / Professional Services,https://www.datafactz.com,
