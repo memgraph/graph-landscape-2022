@@ -61,7 +61,7 @@ width: 1.5
 }
 ```
 
-Next, click on the gear icon (⚙️) to open the Style editor. Next, copy and paste the below style to the editor and click on Apply. If you wish so, you can also save this style for future use.
+Next, click on the gear icon (⚙️) to open the Style editor. After that, paste the above style to the editor and click on Apply. If you wish so, you can also save this style for future use.
 
 ![](https://raw.githubusercontent.com/memgraph/graph-landscape-2022/main/data/graph-landscape.gif)
 
