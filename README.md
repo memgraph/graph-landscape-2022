@@ -63,10 +63,10 @@ width: 1.5
 
 Next, click on the gear icon (⚙️) to open the Style editor. After that, paste the above style to the editor and click on Apply. If you wish so, you can also save this style for future use.
 
-![](https://raw.githubusercontent.com/memgraph/graph-landscape-2022/main/data/graph-landscape.gif)
+![graph-landscape](https://raw.githubusercontent.com/memgraph/graph-landscape-2022/main/assets/graph-landscape.gif)
 
 In the end, with the given styling, you get the following visualization:
 
-![graph-landscape-2022-lab](https://raw.githubusercontent.com/memgraph/graph-landscape-2022/main/data/graph-landscape-2022-lab.png)
+![graph-landscape-2022-lab](https://raw.githubusercontent.com/memgraph/graph-landscape-2022/main/assets/graph-landscape-2022-lab.png)
 
 If you want to change the style and you're not sure how, make sure to check our [Styling guide](https://memgraph.com/docs/memgraph/tutorials/style-your-graphs-in-memgraph-lab).
