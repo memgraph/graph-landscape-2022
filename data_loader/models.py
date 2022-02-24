@@ -1,6 +1,3 @@
-from enum import unique
-from genericpath import exists
-from typing import Optional
 from app import memgraph
 from gqlalchemy import Node, Field, Relationship
 

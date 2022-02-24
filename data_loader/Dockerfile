@@ -10,12 +10,7 @@ RUN apt-get update && \
 COPY requirements.txt ./
 RUN pip3 install -r requirements.txt
 
-COPY app.py /app/app.py
-COPY import-data /app/import-data
+COPY . /app
 WORKDIR /app
 
-ENV FLASK_ENV=development
-ENV LC_ALL=C.UTF-8
-ENV LANG=C.UTF-8
-
-ENTRYPOINT ["python3", "app.py", "--populate"]
+ENTRYPOINT ["python3", "app.py"]
